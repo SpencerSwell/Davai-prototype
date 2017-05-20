@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import * as actions from './actions.js';
+
 
 class FlightList extends Component  {
 
   constructor(props) {
     super()
-
+    console.log("the request ran");
+   
   }
   
 
+
   render () {
    
-  	
+  	console.log(this.props);
+    this.props.dispatch(actions.getFlightData());
+    
   		return (
       <div>
   		<button className="Navigation"> Choose flight </button>
@@ -55,7 +62,7 @@ class FlightList extends Component  {
 const mapStateToProps = (state, props) => {
   return {
 
-    
+    flightData:state.flightData
 
 
   }
@@ -63,4 +70,4 @@ const mapStateToProps = (state, props) => {
 
 
 
-export default FlightList;
+export default connect (mapStateToProps)(FlightList);
