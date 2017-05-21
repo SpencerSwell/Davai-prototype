@@ -17,7 +17,19 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.2"
+    "react-scripts": "1.0.2",
+     "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.0",
+    "npm-run-all": "^4.0.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": " run-p client server",
