@@ -6,7 +6,7 @@ const planecharter = require('./schema.js');
 
 const app = express();
 var DATABASE_URL ="mongodb://Admin:dev@ds013414.mlab.com:13414/davai";
-
+console.log("WORK")
 
 mongoose.Promise = global.Promise;
 
