@@ -15,17 +15,17 @@ mongoose.Promise = global.Promise;
 
 
 
-app.get('/getFlightData', (req, res) => {
-  // console.log(req);
-planecharter
-	.findOne()
-	.exec()
-	.then(planes =>  {
-		console.log(planes);
-		res.status(200).send(planes);
-	});
+// app.get('/getFlightData', (req, res) => {
+//   // console.log(req);
+// planecharter
+// 	.findOne()
+// 	.exec()
+// 	.then(planes =>  {
+// 		console.log(planes);
+// 		res.status(200).send(planes);
+// 	});
 	
-});
+// });
 
 
 
@@ -34,7 +34,7 @@ planecharter
 
 
 
-let server;
+// let server;
 
 // this function connects to our database, then starts the server
 function runServer() {
