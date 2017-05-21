@@ -1,4 +1,4 @@
-import ReduxThunk from 'redux-thunk';
+// import ReduxThunk from 'redux-thunk';
 // export const GET_FLIGHT_DATA = "GET_FLIGHT_DATA";
 // export function getFlightData  (city="Chicago", dispatch) {
 // 	return function(dispatch) {
