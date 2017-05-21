@@ -1,7 +1,10 @@
  import React, { Component } from 'react';
  import { connect } from "react-redux";
+ import {Link} from "react-router-dom";
+
 
   class FlightDetails extends Component {
+
 
 
  	render() { return (
@@ -31,10 +34,11 @@
     <p className="seats"> 7 Seats left </p>
 
 
-    
+
     <p className="cost"> $575 </p> 
+    <Link to={'/payment'}>
     <button className="reserve"> Reserve </button>
-      
+      </Link>
       <img src="http://i.imgur.com/oPQ7LQ6.jpg" alt="Jet"/>
 
       </div>

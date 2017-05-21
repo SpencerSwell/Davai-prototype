@@ -6,72 +6,34 @@ class SignIn extends Component  {
   constructor(props) {
     super()
 
-    this.submitUserDetails = this.submitUserDetails.bind();
     
 
   }
 
-  submitUserDetails(e) {
-
-  }
   
   
 
-  render () {
+  render () { return (
    
-  	if(this.props.user === undefined) {
-  		return (
-  		<form className="signup">
-          <label> Email
-    			 <input type="text" placeholder="Email" className="email"/>
-          </label>
-          <label> Password
-    			 <input type="password" className="password"/>
-          </label>
-          <label> Confirm Password
-    			 <input type="password" className="password"/>
-          </label>
-          <label> First name
-    			 <input type="text" placeholder="First" className="firstName"/>
-          </label>
-          <label> Last name
-    			 <input type="text" placeholder="Last"className="lastName"/>
-          </label>
-          <label> City
-    			 <input type="text" className="City" placeholder="City"/>
-          </label>
-          <label> State
-    			 <input type="text" className="State" placeholder="State"/>
-          </label>
-          <label>  Billing Address
-    			 <input type="text" placeholder="Address"/>
-          </label>
-          <label> Cites of interest
-    			 <input type="text"className="citesOfInterest" placeholder="Areas of interest"/>
-          </label>
-          <label> Submit
-          <Link to={'/flightdetails'}>
-          <input type="submit" />
-          </Link>
-    			</label>
-          </form>
+  <div className="container">
+  <h2 className="inst"> Pay for your ticket </h2>
+  <form action="/charge" method="POST">
+  <input type="text" placeholder="Email"/>
+  <br/>
+  <input type="number" placeholder="Card Number"/>
+  <br/>
+  <input type="text" placeholder="EXP"/>
+  <br/>
+  <input type="number" placeholder="CVC"/>
+  <br/>
+    <button className="pay"> Pay </button>
+  </form>
+</div>
 
       )
   	}
-   	 if(this.props.user !== undefined) {
-    	return (
-    		<form className="signin">
-          <label> Email
-    			<input type="text" placeholder="Email" className="email"/>
-          </label>
-          <label> Password
-    			 <input type="password" className="password"/>
-          </label>
-    			</form>
-    		)
-    }
+
   }
-}
 
 
 const mapStateToProps = (state, props) => {

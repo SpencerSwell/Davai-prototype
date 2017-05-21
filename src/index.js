@@ -21,6 +21,7 @@ const routes =(
  <div>
  <Route path='/flights' component={FlightList}/>
  <Route path='/flightdetails' component={FlightDetails}/>
+ <Route path='/payment' component={SignIn}/>
   </div>
   </Router>
   </Provider> 

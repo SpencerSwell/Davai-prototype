@@ -168,3 +168,28 @@ html {
 * {
 	text-decoration: none;
 }
+
+input {
+
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:20%;
+	height:60px;
+
+}
+
+.container {
+	background-color:#454241;
+}
+
+.pay {
+	margin-left:20%;
+	margin-bottom:50px;
+	height:45px;
+	width:60px;
+}
+
+.inst {
+
+	margin-left:20%
+}
