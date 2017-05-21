@@ -25,11 +25,14 @@ export const gotFlightData = (flightData) => {
 	return {
 		
 		type:GOT_FLIGHT_DATA,
-		flightData:flightData
+		flightData:flightData,
+
 		
 	}
 
 };
+
+
 
 // export const SAVE_GAME_SUCCESS = 'SAVE_GAME_SUCCESS';
 // export const saveGameSuccess = (gameId) => ({

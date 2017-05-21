@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class SignIn extends Component  {
 
   constructor(props) {
     super()
 
+    this.submitUserDetails = this.submitUserDetails.bind();
+    
+
   }
+
+  submitUserDetails(e) {
+
+  }
+  
   
 
   render () {
    
   	if(this.props.user === undefined) {
   		return (
-  		<form class="signup">
+  		<form className="signup">
           <label> Email
     			 <input type="text" placeholder="Email" className="email"/>
           </label>
@@ -38,10 +47,12 @@ class SignIn extends Component  {
     			 <input type="text" placeholder="Address"/>
           </label>
           <label> Cites of interest
-    			 <input type="text" placeholder="Areas of interest"/>
+    			 <input type="text"className="citesOfInterest" placeholder="Areas of interest"/>
           </label>
           <label> Submit
-          <input type="submit"/>
+          <Link to={'/flightdetails'}>
+          <input type="submit" />
+          </Link>
     			</label>
           </form>
 

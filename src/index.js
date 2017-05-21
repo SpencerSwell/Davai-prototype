@@ -23,7 +23,7 @@ const routes =(
  <Route path='/app' component={App}/>
  <Route path='/credentials' component={SignIn}/>
  <Route path='/flights' component={FlightList}/>
- <Route path='/details' component={FlightDetails}/>
+ <Route path='/flightdetails' component={FlightDetails}/>
   </div>
   </Router>
   </Provider> 

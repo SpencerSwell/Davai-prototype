@@ -4,7 +4,16 @@ export const initialState = {
 	user:undefined,
 	page:"FlightList",
 	flightView: "1",
-	flightData:undefined
+	flightData:undefined,
+	type:undefined,
+	seats:undefined,
+	reserved:undefined,
+	remaining:undefined,
+	model:undefined,
+	departurelocation:undefined,
+	arrivallocation:undefined,
+	departuretime:undefined,
+	arrivaltime:undefined
 }
 
 export default function reducer (state = initialState, action) {

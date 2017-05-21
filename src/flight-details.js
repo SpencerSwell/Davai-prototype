@@ -1,8 +1,10 @@
  import React, { Component } from 'react';
+ import { connect } from "react-redux";
 
-export default  function FlightDetails() {
+  class FlightDetails extends Component {
 
- 	return (
+
+ 	render() { return (
 
  <div className="flightinfo">
       <img src="routepiture.jpg" alt="picutre of the route"/>
@@ -36,6 +38,25 @@ export default  function FlightDetails() {
     </div>
 	
 
-	)
+	)}
 
 };
+
+
+
+
+
+
+const mapStateToProps = (state, props) => {
+  return {
+
+    flightData:state.flightData
+
+
+  }
+}
+
+
+
+export default connect (mapStateToProps)(FlightDetails);
+
