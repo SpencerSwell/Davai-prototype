@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import * as actions from './actions.js';
+import {Link} from 'react-router-dom'
 
 
 class FlightList extends Component  {
@@ -15,38 +16,46 @@ class FlightList extends Component  {
 
   render () {
    
-  	console.log(this.props);
-    this.props.dispatch(actions.getFlightData());
 
   		return (
       <div>
-  		<button className="Navigation"> Choose flight </button>
+  		<nav>
+      <button className="Navigation"> Choose flight </button>
       <button className="Navigation"> About you </button>
       <button className="Navigation"> Payment </button>
-      <h2> Flights for you. </h2>
+      </nav>
+
+      <div className="Container">
+      <img className="logo" src= "http://i.imgur.com/RluS3Vx.png" alt="Davai logo"/>
+      <h2 className="flight-headline"> Flights for you. </h2>
       <div className="flight">
-      <p className="day"> {this.props.dateofdeparture[0]} </p>
-      <p className="month"> Mar </p>
-      <p className="aircraft"> {this.props.type[0]} </p>
-      <img src="svg triangle" alt="Triangle UI"/>
+      <Link to={'/flightdetails'}>
+      <p className="day"> 29 </p>
+      <p className="month">Mar</p>
+      <p className="aircraft"> Eclipse 500 </p>
+      <i className="desc"> 10 passenger, light jet </i>
+      </Link>
+      </div>
+
+      <div className="flight">
+      <p className="day"> 29 </p>
+      <p className="month">Mar</p>
+      <p className="aircraft"> 901 jet </p>
+      <i className="desc"> 10 passenger, light jet </i>
       </div>
       <div className="flight">
-      <p className="day"> {this.props.dateofdeparture[1]} </p>
-      <p className="month"> Mar </p>
-      <p className="aircraft"> {this.props.type[1]} </p>
-      <img src="svg triangle" alt="Triangle UI"/>
+      <p className="day"> 27 </p>
+      <p className="month">Mar</p>
+      <p className="aircraft"> Fusion jet F50 </p>
+      <i className="desc"> 10 passenger, light jet </i>
+      
       </div>
       <div className="flight">
-      <p className="day"> {this.props.dateofdeparture[2]} </p>
-      <p className="month"> Apr </p>
-      <p className="aircraft"> {this.props.type[2]} </p>
-      <img src="svg triangle" alt="Triangle UI"/>
-      </div>
-      <div className="flight">
-      <p className="day"> {this.props.dateofdeparture[3]} </p>
-      <p className="month"> Apr </p>
-      <p className="aircraft"> {this.props.type[3]} </p>
-      <img src="svg triangle" alt="Triangle UI"/>
+      <p className="day"> 28 </p>
+      <p className="month">Mar</p>
+      <p className="aircraft"> Honda fusion </p>
+      <i className="desc"> 10 passenger, light jet </i>
+          </div>
         </div>
       </div>
 

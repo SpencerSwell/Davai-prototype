@@ -30,8 +30,9 @@ app.post('/posts', (req, res) => {
 });
 
 app.get('/getFlightData', (req, res) => {
+  console.log(req);
 planecharter
-	.find()
+	.findOne()
 	.exec()
 	.then(planes =>  {
 		console.log(planes);

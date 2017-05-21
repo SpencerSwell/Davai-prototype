@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import SignIn from './signin-page.js';
 import FlightDetails from './flight-details'
 import FlightList from './flight-list.js';
@@ -20,8 +19,6 @@ const routes =(
  <Provider store={store}>
  <Router>
  <div>
- <Route path='/app' component={App}/>
- <Route path='/credentials' component={SignIn}/>
  <Route path='/flights' component={FlightList}/>
  <Route path='/flightdetails' component={FlightDetails}/>
   </div>

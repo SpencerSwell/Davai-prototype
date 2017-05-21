@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Playfair+Display');
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+
+body {
+	padding-left:3%;
+	padding-right: 3%;
+}
+
+div
+
+h2 {
+color:#cfd4ca;
+}
+
+.flight > * {
+	color:#cfd4ca
+}
+
+.Container {
+	background-color: #454241;
+}
+
+p {
+	font-family: 'Josefin Sans', serif;
+	color:#cfd4ca;
+}
+
+button {
+	background-color: #D4582E;
+	font-family: 'Josefin Sans', 'serif';
+	font-weight:600;
+	border:1px solid grey;
+}
+
+.Navigation {
+	width:33%;
+	padding:2% 1%;
+	font-size:0.8em;
+	color:#cfd4ca;
+}
+
+.logo {
+	margin-top:20px;
+	width:350px;
+	height:130px;
+}
+
+.flight {
+	max-height:300px;
+	height:150px;
+	border-bottom:1px solid #59A5D8;
+}
+.flight-headline {
+	font-family:'Josefin Sans', sans-serif;
+	margin-left:3%;
+	margin-right:3%;
+	font-size:1.5em;
+}
+
+.day {
+	margin-left:40px;
+	display:inline;
+	font-size:2.0em;
+	font-family: 'Josefin Sans', serif;
+	font-weight: bold;
+}
+
+.month {
+	display:inline-block;
+	font-size: 2.0em;
+	position:relative;
+	top:40px;
+	left:-40px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.bad-month {
+	display:inline-block;
+	font-size: 2.0em;
+	position:relative;
+	top:40px;
+	left:-30px;
+}
+
+.aircraft {
+	margin-left:40px;
+	position:relative;
+	left:80px;
+	bottom:100px;
+	font-size:2em;
+}
+
+.desc {
+	position:relative;
+	left:110px;
+	font-size:1.3em;
+	bottom:120px;
+}
+
+
+html {
+	max-height:700px;
+}
+
+.route {
+	width:100%;
+	display:block;
+}
+
+.flightinfo {
+	background-color: #454241;
+
+}
+
+.Seats {
+	width:100%;
+}
+
+.reserve {
+	width:120px;
+	height:70px;
+	color:#cfd4ca;
+	margin-left:33%;
+	margin-bottom:80px;
+	font-family: 'Playfair Display', serif;
+	font-size:1.4em;
+
+}
+
+.flightinfo > img {
+	padding:0;
+	width:100%;
+}
+
+.ticket {
+	margin-left:10%;
+	font-family: "Josefin Sans", serif;
+}
+
+
+.seats{ margin-bottom:70px;  }
+
+.date {
+	margin-bottom: 20%;
+
+}
+	.craft {
+		padding-top:10px;
+	}
+
+	.flightinfo > * {
+	padding-left:5%;
+	padding-right: 5%;
+	text-align:center;
+	margin-right:5%;
+	text-align: center;
+}
+
+* {
+	border-radius: 4px;
+}
+
+* {
+	text-decoration: none;
+}

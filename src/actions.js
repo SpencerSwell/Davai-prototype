@@ -1,12 +1,13 @@
 import ReduxThunk from 'redux-thunk';
-
 export const GET_FLIGHT_DATA = "GET_FLIGHT_DATA";
-export function getFlightData  (city="Chicago",dispatch) {
+export function getFlightData  (city="Chicago", dispatch) {
 	return function(dispatch) {
  {
 	const url =  '/getFlightData';
 
 	return fetch(url).then(response => {
+
+
 			
 			return response.json();
 		}).then(flightdata => {
