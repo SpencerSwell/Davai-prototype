@@ -26,8 +26,7 @@
 });
  
 
- var userinfo = mongoose.model('userinfo', userSchema);
  
  var planecharter = mongoose.model('planecharter', flightSchema);
  
- module.exports = (userinfo, planecharter);
+ module.exports = ( planecharter);
