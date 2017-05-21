@@ -1,37 +1,37 @@
 import ReduxThunk from 'redux-thunk';
-export const GET_FLIGHT_DATA = "GET_FLIGHT_DATA";
-export function getFlightData  (city="Chicago", dispatch) {
-	return function(dispatch) {
- {
-	const url =  '/getFlightData';
+// export const GET_FLIGHT_DATA = "GET_FLIGHT_DATA";
+// export function getFlightData  (city="Chicago", dispatch) {
+// 	return function(dispatch) {
+//  {
+// 	const url =  '/getFlightData';
 
-	return fetch(url).then(response => {
+// 	return fetch(url).then(response => {
 
 
 			
-			return response.json();
-		}).then(flightdata => {
-			return dispatch(gotFlightData(flightdata));
+// 			return response.json();
+// 		}).then(flightdata => {
+// 			return dispatch(gotFlightData(flightdata));
 			 
-		})
-	}
+// 		})
+// 	}
 
-}
+// }
 
-}
+// }
 
-export const GOT_FLIGHT_DATA = "GOT_FLIGHT_DATA";
-export const gotFlightData = (flightData) => {
-	console.log("GOT THE FLIGHT DATA", flightData);
-	return {
+// export const GOT_FLIGHT_DATA = "GOT_FLIGHT_DATA";
+// export const gotFlightData = (flightData) => {
+// 	console.log("GOT THE FLIGHT DATA", flightData);
+// 	return {
 		
-		type:GOT_FLIGHT_DATA,
-		flightData:flightData,
+// 		type:GOT_FLIGHT_DATA,
+// 		flightData:flightData,
 
 		
-	}
+// 	}
 
-};
+// };
 
 
 
