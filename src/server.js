@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
 
-const {DATABASE_URL, PORT} = require('./config.js');
+const {DATABASE_URL} = require('./config.js');
 const userinfo = require('./schema.js');
 const planecharter = require('./schema.js');
 
